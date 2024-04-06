@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+       
+        <nav>
+            <div class="icon">
+                <h1 class="logo"><img src="logo.png" width="100px" height="60px"></h1>
+                
+
+            </div>
+            <ul id="sidemenu">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="tesstonomial.html">Tesstonomial</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+<!-------------------about-------------------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-column-1">
+                <img src="image/manish.jpg">
+                
+            </div>
+            <div class="about-column-2">
+                <h1 class="sub-title">About me</h1>
+                <p>An IT student who is enthusiastic and motivated and is passionate abou
+                    developments in technology and the market.</p>
+                <div class="tab-titles">
+                    <p class= "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class= "tab-links" onclick="opentab('education')">Education</p>
+                    <p class= "tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        
+                        <li><span>Web developing</span><br>Web development</li>
+                        <li><span>C++</span><br>Billing System</li>
+                        <li><span>PYTHON</span><br>Student Managment system</li>
+ 
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="education">
+                    <ul>
+                        <li><span>2021</span><br> Schooling (<strong> International Lucky English School</strong>)</li>
+                        <li><span>2021-2023</span><br>+2 science(<strong> Goldengate International College</strong>)</li>
+                        <li><span>2024-Present</span><br>Undergraduate(<strong>The British College</strong></li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="experience">
+                    <ul>
+                        
+                        <li><span>Programming </span><br>C++</script></li>
+                        <li><span>Programming </span><br>Python</script></li>
+                        <li><span>Web Development</span><br> HTML,CSS and JAVA SCRIPT</script></li>
+                        <li><span>Desigining </span><br>UI/UX design</script></li>
+                        <li><span>Desigining </span><br>Photoshop and Illustrator</script></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </footer>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>  
+</html>

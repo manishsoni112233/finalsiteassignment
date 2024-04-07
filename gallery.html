@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    
+<div id="header">
+    <div class="container">
+       
+        <nav>
+            <div class="icon">
+                <h1 class="logo"><img src="logo.png" width="100px" height="60px"></h1>
+                
+
+            </div>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tesstonomial.html">Tesstonomial</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        
+        
+        
+        
+        
+        <!----------------Portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/web.png">
+                <div class="layer">
+                    <h3>Web development</h3>
+                    <p> Having knowledge about programming languages such as HTML, CSS, and JavaScript
+                         to create the layout, style, and functionality of web pages.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/IOT.png">
+                <div class="layer">
+                    <h3>IOT Device</h3>
+                    <p>The project's goal was to develop and use an ultrasonic distance meter. The device 
+                        presented here is capable of detecting the target and figuring out its distance. A basic, 
+                        low-cost tool for measuring distance is the ultrasonic distance meter. The device 
+                        determines the distance with the appropriate precision and resolution.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/ML.png">
+                <div class="layer">
+                    <h3>Machine learning</h3>
+                    <p>Understanding of pyhton libraries such as numpy, Pandas and Matplotlib that will help in ML,
+                         and data analyst.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+
+    
+        
+    
+        
+        <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+
+    
+
+
+</body>
+</html>
